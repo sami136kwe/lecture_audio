@@ -1,0 +1,4 @@
+kokoro-onnx>=0.5
+fastapi
+uvicorn
+numpy

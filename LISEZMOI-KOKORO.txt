@@ -1,0 +1,35 @@
+LECTEUR STUDIO - voix Kokoro (locale)
+=====================================
+
+Dossier :
+  server.mjs
+  package.json
+  public/lecteur.html
+  kokoro/kokoro_server.py
+  kokoro/requirements.txt
+  kokoro/models/        (rempli au premier lancement)
+
+1. Installer (une seule fois)
+   cd kokoro
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+
+2. Terminal 1 : service vocal
+   cd kokoro
+   source venv/bin/activate
+   python kokoro_server.py
+   Au premier lancement, le modèle (environ 350 Mo) se télécharge seul.
+   Attends "Kokoro prêt".
+
+3. Terminal 2 : application
+   npm start
+   Ouvre http://127.0.0.1:8787
+
+Voix
+  Français : Siwis (femme), la seule voix française de Kokoro.
+  Anglais : Heart, Bella, Emma (femmes), Michael, Adam, George (hommes).
+  L'app choisit la voix selon la langue de chaque phrase.
+
+Remarque : Kokoro et XTTS utilisent le même port (8788). Arrête XTTS
+avant de lancer Kokoro (Ctrl+C dans son terminal).

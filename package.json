@@ -1,0 +1,13 @@
+{
+  "name": "lecteur-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lecteur PDF → audio avec voix humaines Leo et Ara (xAI)",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
